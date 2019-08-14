@@ -1,6 +1,7 @@
 <h1>{{title}}</h1>
 <ul>
   <li *ngFor="let todo of todos">
-    {{todo}}
-  </li>
+    {{todo.id}}. {{todo.mensagem}} -
+    <button>Concluir</button> | <button>Remover</button>
+  </li> 
 </ul>
