@@ -2,7 +2,15 @@
 <ul>
   <li *ngFor="let todo of todos">
     {{todo.id}}. {{todo.mensagem}} |
-    <button *ngIf="!todo.done">Concluir</button> m
-    <button *ngIf="todo.done">Remover</button>
+    <button *ngIf="!todo.done">Concluir</button>
+    <button *ngIf="todo.done">Refazer</button>
+    <button (click)="remove(todo)">Remove</button>
+
   </li> 
 </ul>
+<!--
+  
+() = HTML -> TS
+[] = TS -> HTML
+[()] = TS <-- -> HTML
+-->
