@@ -1,7 +1,8 @@
 <h1>{{title}}</h1>
 <ul>
   <li *ngFor="let todo of todos">
-    {{todo.id}}. {{todo.mensagem}} -
-    <button>Concluir</button> | <button>Remover</button>
+    {{todo.id}}. {{todo.mensagem}} |
+    <button *ngIf="!todo.done">Concluir</button> m
+    <button *ngIf="todo.done">Remover</button>
   </li> 
 </ul>
