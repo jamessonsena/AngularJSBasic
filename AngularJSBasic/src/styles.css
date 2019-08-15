@@ -1,14 +1,14 @@
 
 body {
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family:'Mongolian Baiti',sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mongolian Baiti',sans-serif;
   background: #4800ff;
-  background: -moz-linear-gradient(60deg, #4800ff,0%,#c86dd7,100%);
-  background: -webkit-linear-gradient(60deg, #3023ae,0%,#c86dd7,100%);
-  background: linear-gradient(60deg, #3023ae,0%,#c86dd7,100%);
+  background-image: -moz-linear-gradient(-45deg,red,blue);
+  background: -webkit-linear-gradient(-45deg,red,blue);
+  background: linear-gradient(-45deg,red,blue);
 }
 button {
   cursor:pointer;
