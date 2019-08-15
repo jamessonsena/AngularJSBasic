@@ -10,3 +10,33 @@ body {
   background: -webkit-linear-gradient(60deg, #3023ae,0%,#c86dd7,100%);
   background: linear-gradient(60deg, #3023ae,0%,#c86dd7,100%);
 }
+button {
+  cursor:pointer;
+}
+li {
+  text-align: left;
+  margin: 10px;
+  padding: 15 px;
+  list-style: none;
+}
+  li > button {
+    opacity: 0.5;
+    transition: opacity 1s;
+  }
+
+  li > button:hover {
+    opacity:1;
+    transition: opacity 1s;
+    }
+
+ul {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  background: #ffffff;
+  -webkit-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.39);
+  -moz-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.39);
+  box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.39);
+}
+
