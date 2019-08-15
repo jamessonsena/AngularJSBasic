@@ -7,7 +7,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent {
+  public mode = 'list';
   public todos: Todo[] = [];
   public title: String = 'Minhas Tarefas';
   public form: FormGroup;
@@ -67,6 +69,8 @@ export class AppComponent {
     const data = JSON.stringify(this.todos);
     localStorage.setItem('todos', data);
   }
-
+  changeMode(mode: string) {
+    this.mode = mode;
+  }
 
 }
