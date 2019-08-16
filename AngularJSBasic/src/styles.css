@@ -10,13 +10,37 @@ body {
   background: -webkit-linear-gradient(-45deg,red,blue);
   background: linear-gradient(-45deg,red,blue);
 }
+#modal {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+}
+input {
+  width:100%;
+  line-height:50px;
+  text-indent:10px;
+  font-size:1.2em;
+}
+.danger {
+  background-color:red;
+  color:white;
+  font-weight:bold;
+  padding:5px;
+  margin-top:10px;
+
+}
 button {
   cursor:pointer;
 }
 li {
   text-align: left;
   margin: 10px;
-  padding: 15 px;
+  padding: 15px;
   list-style: none;
 }
   li > button {
